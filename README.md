@@ -156,7 +156,8 @@ Berikut adalah hasil tampilan halaman portofolio pada perangkat desktop dan mobi
 ![alt text](image.png)
 
 # MOBILE
-![alt text](<_C__Universitas%20Pancasila_Semester%203_Desain%20Web_Praktek_PERT4_tugas.html (1).png>)
+<img width="800" height="7160" alt="_C__Universitas%20Pancasila_Semester%203_Desain%20Web_Praktek_PERT4_tugas html (1)" src="https://github.com/user-attachments/assets/bdc6422e-a286-468f-a282-b68c0f87b2cf" />
+
 
 ## 9. Ringkasan
 
