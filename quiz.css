@@ -1,0 +1,649 @@
+/* =====================================
+   RESET
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    line-height: 1.6;
+
+    color: #333;
+
+    background-color: #f5f7fa;
+}
+
+
+img {
+    max-width: 100%;
+
+    display: block;
+}
+
+
+/* =====================================
+   CONTAINER
+===================================== */
+
+.container {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+/* POIN 2:
+   Warna header diubah menjadi ungu
+*/
+
+header {
+    background-color: #5b2a86;
+
+    color: white;
+
+    padding: 20px 0;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+header .container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+header h1 {
+
+    font-size: 24px;
+
+    color: white;
+}
+
+
+/* =====================================
+   NAVIGATION
+===================================== */
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 20px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+
+    color: #ffd166;
+}
+
+
+/* =====================================
+   HERO
+===================================== */
+
+#hero {
+
+    background-color: white;
+
+    padding: 80px 0;
+}
+
+
+.hero-content {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+
+.hero-text {
+
+    width: 55%;
+}
+
+
+.hero-text h2 {
+
+    font-size: 42px;
+
+    color: #5b2a86;
+
+    margin-bottom: 10px;
+}
+
+
+.hero-text h3 {
+
+    font-size: 22px;
+
+    color: #d14d8b;
+
+    margin-bottom: 20px;
+}
+
+
+.hero-text p {
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================================
+   FOTO PROFILE
+===================================== */
+
+/*
+   POIN 3:
+   Foto dibuat KOTAK
+*/
+
+.hero-image {
+
+    width: 40%;
+}
+
+
+.hero-image img {
+
+    width: 280px;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    /* TIDAK BULAT */
+
+    border-radius: 0;
+
+    margin: auto;
+
+    border: 6px solid #5b2a86;
+}
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+.button {
+
+    display: inline-block;
+
+    background-color: #5b2a86;
+
+    color: white;
+
+    padding: 12px 25px;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+
+.button:hover {
+
+    background-color: #d14d8b;
+}
+
+
+/* =====================================
+   SECTION
+===================================== */
+
+.section {
+
+    padding: 70px 0;
+}
+
+
+.section h2 {
+
+    text-align: center;
+
+    color: #5b2a86;
+
+    font-size: 38px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================================
+   TENTANG
+===================================== */
+
+/*
+   POIN 5:
+   Background section dibuat berbeda
+*/
+
+.tentang {
+
+    background-color: #e9ddff;
+}
+
+
+.tentang p {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+
+/* =====================================
+   PROJECT
+===================================== */
+
+.project-section {
+
+    background-color: #fdf8fb;
+}
+
+
+.project-wrapper {
+
+    /*
+       POIN 1:
+       2 CARD PER BARIS
+
+       1  2
+       3  4
+       5  6
+    */
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+    margin-top: 40px;
+}
+
+
+/* =====================================
+   PROJECT CARD
+===================================== */
+
+.project-card {
+
+    background-color: white;
+
+    padding: 20px;
+
+    min-height: 400px;
+
+    overflow: hidden;
+
+    box-shadow: 6px 6px 0
+        rgba(91, 42, 134, 0.12);
+
+    transition: 0.3s;
+}
+
+
+.project-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 9px 9px 0
+        rgba(91, 42, 134, 0.2);
+}
+
+
+/* =====================================
+   FOTO PROJECT
+===================================== */
+
+.project-card img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================
+   JUDUL PROJECT
+===================================== */
+
+.project-card h3 {
+
+    color: #5b2a86;
+
+    font-size: 23px;
+
+    margin-bottom: 10px;
+}
+
+
+.project-card p {
+
+    color: #555;
+}
+
+
+/* =====================================
+   POIN 1
+   BORDER DAN RADIUS BERBEDA
+===================================== */
+
+
+/* PROJECT 1 */
+
+.card-1 {
+
+    border: 3px solid #5b2a86;
+
+    border-radius: 5px;
+}
+
+
+/* PROJECT 2 */
+
+.card-2 {
+
+    border: 4px dashed #d14d8b;
+
+    border-radius: 15px;
+}
+
+
+/* PROJECT 3 */
+
+.card-3 {
+
+    border: 5px dotted #f0a202;
+
+    border-radius: 25px;
+}
+
+
+/* PROJECT 4 */
+
+.card-4 {
+
+    border: 6px double #4a90e2;
+
+    border-radius: 10px;
+}
+
+
+/* PROJECT 5 */
+
+.card-5 {
+
+    border: 3px solid #2a9d8f;
+
+    border-radius: 30px;
+}
+
+
+/* PROJECT 6 */
+
+.card-6 {
+
+    border: 5px dashed #e76f51;
+
+    border-radius: 20px 5px 20px 5px;
+}
+
+
+/* =====================================
+   KONTAK
+===================================== */
+
+.kontak {
+
+    background-color: #ffe5ef;
+
+    text-align: center;
+}
+
+
+.kontak h2 {
+
+    margin-bottom: 15px;
+}
+
+
+.kontak p {
+
+    margin-bottom: 15px;
+}
+
+
+.kontak a {
+
+    color: #5b2a86;
+
+    font-weight: bold;
+}
+
+
+/* =====================================
+   SOCIAL MEDIA
+===================================== */
+
+/*
+   POIN 4:
+   Instagram dan LinkedIn
+*/
+
+.social-media {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    margin-top: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.social {
+
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    color: white !important;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.instagram {
+
+    background-color: #d62976;
+}
+
+
+.linkedin {
+
+    background-color: #0077b5;
+}
+
+
+.social:hover {
+
+    transform: translateY(-4px);
+
+    opacity: 0.85;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+
+    background-color: #3d2057;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 768px) {
+
+
+    /* HEADER */
+
+    header .container {
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    nav {
+
+        text-align: center;
+    }
+
+
+    nav a {
+
+        margin: 0 7px;
+    }
+
+
+    /* HERO */
+
+    .hero-content {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .hero-text {
+
+        width: 100%;
+    }
+
+
+    .hero-image {
+
+        width: 100%;
+    }
+
+
+    .hero-image img {
+
+        width: 250px;
+
+        height: 250px;
+    }
+
+
+    /* PROJECT */
+
+    .project-wrapper {
+
+        /*
+           HP jadi 1 kolom
+        */
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .project-card {
+
+        min-height: auto;
+    }
+
+
+    /* SOCIAL MEDIA */
+
+    .social-media {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .social {
+
+        width: 220px;
+    }
+
+}

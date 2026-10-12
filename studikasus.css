@@ -1,0 +1,583 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #543b50;
+    background-color: #fff8fb;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   BACKGROUND KOTAK PINK
+========================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(245, 157, 190, 0.25) 2px,
+            transparent 2px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(245, 157, 190, 0.25) 2px,
+            transparent 2px
+        );
+
+    background-size: 35px 35px;
+
+    z-index: -1;
+}
+
+
+/* =========================
+   GLOBAL
+========================= */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    color: #54275e;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background-color: rgba(255, 250, 252, 0.95);
+    border-bottom: 2px solid #e9b4cb;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: #54275e;
+}
+
+.navbar {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    color: #54275e;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #df6f9b;
+}
+
+.btn-header {
+    background-color: #54275e;
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 20px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    padding: 100px 0;
+}
+
+.hero-content {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 60px;
+}
+
+.small-title {
+    color: #d75f8c;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 60px;
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+.hero-text h2 span {
+    color: #e76d9b;
+    display: block;
+}
+
+.description {
+    max-width: 550px;
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary {
+    display: inline-block;
+
+    background-color: #54275e;
+    color: white;
+
+    padding: 13px 23px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    box-shadow: 0 5px 0 #35183d;
+}
+
+.btn-secondary {
+    display: inline-block;
+
+    background-color: white;
+    color: #54275e;
+
+    padding: 11px 23px;
+
+    border: 2px solid #54275e;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   HERO CARD
+========================= */
+
+.hero-card {
+    min-height: 380px;
+
+    border: 3px solid #744563;
+
+    border-radius: 30px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    transform: rotate(2deg);
+
+    box-shadow: 10px 10px 0 #f3a7c4;
+}
+
+.card-inner {
+    width: 65%;
+
+    background-color: #fff6df;
+
+    border: 3px solid #54275e;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    padding: 35px;
+
+    transform: rotate(-5deg);
+
+    box-shadow: 8px 8px 0 #f3a7c4;
+}
+
+.card-inner p {
+    color: #e76d9b;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+.card-inner h3 {
+    font-size: 42px;
+
+    line-height: 0.9;
+
+    margin: 15px 0;
+}
+
+.card-inner span {
+    font-size: 14px;
+}
+
+.card-decor {
+    position: absolute;
+
+    right: 25px;
+    top: 15px;
+
+    font-size: 45px;
+
+    color: #e76d9b;
+}
+
+
+/* =========================
+   LAYANAN
+========================= */
+
+.layanan {
+    padding: 90px 0;
+}
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.section-title p {
+    color: #d75f8c;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 45px;
+
+    margin: 8px 0;
+}
+
+.service-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.service-card {
+    background-color: white;
+
+    border: 2px solid #744563;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow: 7px 7px 0 rgba(84, 39, 94, 0.1);
+}
+
+.service-card.active {
+    background-color: #ffe7f0;
+
+    transform: translateY(-10px);
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffe0ec;
+
+    border-radius: 15px;
+
+    font-size: 25px;
+
+    color: #54275e;
+
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    margin-bottom: 20px;
+}
+
+.service-card a {
+    color: #d75f8c;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   TENTANG
+========================= */
+
+.tentang {
+    padding: 80px 0;
+}
+
+.tentang-box {
+    background-color: #54275e;
+
+    color: white;
+
+    border-radius: 25px;
+
+    padding: 55px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    box-shadow: 10px 10px 0 #efa3c0;
+}
+
+.tentang-box h2 {
+    color: white;
+
+    font-size: 45px;
+
+    line-height: 1.1;
+}
+
+.tentang-box > p {
+    align-self: center;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   KONTAK
+========================= */
+
+.kontak {
+    padding: 90px 0;
+
+    text-align: center;
+}
+
+.kontak-box {
+    background-color: rgba(255, 255, 255, 0.85);
+
+    border: 2px solid #744563;
+
+    border-radius: 25px;
+
+    padding: 70px 20px;
+}
+
+.kontak-box h2 {
+    font-size: 45px;
+
+    margin: 10px 0;
+}
+
+.kontak-box p:not(.small-title) {
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: #3f2045;
+
+    color: white;
+
+    padding: 25px 0;
+}
+
+.footer-content {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+/* =========================
+   RESPONSIVE MOBILE
+   < 768px
+========================= */
+
+@media (max-width: 767px) {
+
+    .container {
+        width: 90%;
+    }
+
+
+    /* HEADER */
+
+    .header-content {
+        flex-direction: column;
+
+        padding: 15px 0;
+
+        gap: 12px;
+    }
+
+    .navbar {
+        gap: 15px;
+
+        font-size: 14px;
+    }
+
+    .btn-header {
+        display: none;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text h2 {
+        font-size: 45px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .hero-button {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    .hero-card {
+        min-height: 300px;
+    }
+
+
+    /* LAYANAN */
+
+    .layanan {
+        padding: 60px 0;
+    }
+
+    .section-title h2 {
+        font-size: 36px;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card.active {
+        transform: none;
+    }
+
+
+    /* TENTANG */
+
+    .tentang-box {
+        grid-template-columns: 1fr;
+
+        padding: 35px 25px;
+
+        gap: 25px;
+    }
+
+    .tentang-box h2 {
+        font-size: 36px;
+    }
+
+
+    /* KONTAK */
+
+    .kontak-box {
+        padding: 50px 20px;
+    }
+
+    .kontak-box h2 {
+        font-size: 36px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-content {
+        flex-direction: column;
+
+        text-align: center;
+    }
+}
